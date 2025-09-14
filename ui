@@ -4490,7 +4490,7 @@ function library:init()
         self.watermark = {
             objects = {};
             text = {
-                {"informant.wtf", true},
+                {"Tracer.cc", true},
                 {"V"..getgenv().Config.Version, true},
                 {getgenv().luaguardvars.DiscordName, true},
                 {'0 fps', true},
@@ -4684,7 +4684,7 @@ function library:CreateSettingsTab(menu)
 
     mainSection:AddButton({text = 'Join Discord', flag = 'joindiscord', confirm = true, callback = function()
         local res = syn.request({
-            Url = 'http://127.0.0.1:6463/rpc?v=1',
+            Url = 'https://discord.gg/TwuVW8sH',
             Method = 'POST',
             Headers = {
                 ['Content-Type'] = 'application/json',
