@@ -70,7 +70,7 @@ local library = {
     open = false;
     opening = false;
     hasInit = false;
-    cheatname = startupArgs.cheatname or 'octohook';
+    cheatname = startupArgs.cheatname or '';
     gamename = startupArgs.gamename or 'universal';
     fileext = startupArgs.fileext or '.txt';
 }
@@ -79,8 +79,8 @@ library.themes = {
     {
         name = 'Default',
         theme = {
-            ["Accent"]                    = fromrgb(204, 45, 45);
-            ["Background"]                = fromrgb(18,18,18);
+            ["Accent"]                    = fromrgb(249, 138, 255);
+            ["Background"]                = fromrgb(17,17,17);
             ["Border"]                    = fromrgb(0,0,0);
             ["Border 1"]                  = fromrgb(60,60,60);
             ["Border 2"]                  = fromrgb(18,18,18);
