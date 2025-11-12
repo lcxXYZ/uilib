@@ -1,12 +1,12 @@
 --[[
 Octohook ui lib informant version
 Developed by liam#4567
-Edited by lcx___
+Edited by xz#1111
 ]]
 
 -- // Load
 
-local startupArgs = ({...})[1] or {}d
+local startupArgs = ({...})[1] or {}
 
 if getgenv().library ~= nil then
     getgenv().library:Unload();
@@ -79,7 +79,7 @@ library.themes = {
     {
         name = 'Default',
         theme = {
-            ["Accent"]                    = fromrgb(255, 153, 243);
+            ["Accent"]                    = fromrgb(204, 45, 45);
             ["Background"]                = fromrgb(18,18,18);
             ["Border"]                    = fromrgb(0,0,0);
             ["Border 1"]                  = fromrgb(60,60,60);
@@ -4490,7 +4490,7 @@ function library:init()
         self.watermark = {
             objects = {};
             text = {
-                {"Tracer.cc", true},
+                {"informant.wtf", true},
                 {"V"..getgenv().Config.Version, true},
                 {getgenv().luaguardvars.DiscordName, true},
                 {'0 fps', true},
@@ -4621,9 +4621,11 @@ function library:CreateSettingsTab(menu)
     local mainSection = settingsTab:AddSection('Main', 1);
     local creditsSection = settingsTab:AddSection('Credits', 2);
     creditsSection:AddSeparator({text = 'Owners/Developers'});
-    creditsSection:AddText({text = "lcx___"})
-    creditsSection:AddSeparator({text = 'Gonners'});
-    creditsSection:AddText({text = "kekxton"})
+    creditsSection:AddText({text = "xz#1111"})
+    creditsSection:AddText({text = "goof#1000"})
+    creditsSection:AddSeparator({text = 'Helpers'});
+    creditsSection:AddText({text = "encode#9999"})
+    creditsSection:AddText({text = "Vault#5434"})
 
 
     configSection:AddBox({text = 'Config Name', flag = 'configinput'})
@@ -4684,7 +4686,7 @@ function library:CreateSettingsTab(menu)
 
     mainSection:AddButton({text = 'Join Discord', flag = 'joindiscord', confirm = true, callback = function()
         local res = syn.request({
-            Url = 'https://discord.gg/TwuVW8sH',
+            Url = 'http://127.0.0.1:6463/rpc?v=1',
             Method = 'POST',
             Headers = {
                 ['Content-Type'] = 'application/json',
