@@ -6,7 +6,7 @@ Edited by lcx___
 
 -- // Load
 
-local startupArgs = ({...})[1] or {}
+local startupArgs = ({...})[1] or {}d
 
 if getgenv().library ~= nil then
     getgenv().library:Unload();
